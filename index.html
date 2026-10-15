@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我的個人網站</title>
+  <meta name="description" content="我的作品集與個人介紹" />
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.7;
+      color: #1f2937;
+      background: #f9fafb;
+    }
+    header {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #2563eb, #7c3aed);
+      color: white;
+    }
+    header h1 { margin: 0 0 12px; font-size: 2.5rem; }
+    header p { margin: 0; opacity: .9; }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    section { margin-bottom: 48px; }
+    h2 { border-left: 4px solid #2563eb; padding-left: 12px; }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.08);
+    }
+    a { color: #2563eb; }
+    footer {
+      text-align: center;
+      padding: 32px 20px;
+      color: #6b7280;
+      font-size: .9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>你好，我是 Your Name</h1>
+    <p>前端開發者 / 學生 / 創作者</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>關於我</h2>
+      <p>這裡寫一段自我介紹。你可以提到你的技能、興趣、目前正在學習的東西。</p>
+    </section>
+
+    <section>
+      <h2>作品集</h2>
+      <div class="projects">
+        <div class="card">
+          <h3>專案一</h3>
+          <p>簡短描述這個專案。</p>
+          <a href="#">查看專案 →</a>
+        </div>
+        <div class="card">
+          <h3>專案二</h3>
+          <p>簡短描述這個專案。</p>
+          <a href="#">查看專案 →</a>
+        </div>
+        <div class="card">
+          <h3>專案三</h3>
+          <p>簡短描述這個專案。</p>
+          <a href="#">查看專案 →</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>聯絡我</h2>
+      <p>Email：<a href="mailto:you@example.com">you@example.com</a></p>
+      <p>GitHub：<a href="https://github.com/你的帳號">github.com/你的帳號</a></p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Your Name. Built with GitHub Pages.
+  </footer>
+</body>
+</html>
